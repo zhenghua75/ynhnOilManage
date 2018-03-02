@@ -1,0 +1,239 @@
+<STYLE>
+BODY {
+PADDING-RIGHT: 0px; 
+PADDING-LEFT: 0px; 
+FONT-SIZE: 12px; 
+PADDING-BOTTOM: 0px; 
+MARGIN: 0px; 
+BACKGROUND-COLOR: #3399FF; 
+PADDING-TOP: 0px; 
+BORDER-BOTTOM: buttonface 1px solid;
+font-size:9pt;
+scrollbar-highlight-color: buttonface; 
+scrollbar-shadow-color: buttonface; 
+scrollbar-3dlight-color: buttonhighlight; 
+scrollbar-track-color: #eeeeee; 
+scrollbar-darkshadow-color: buttonshadow
+}
+table{font-size:9pt}
+div{font-size:9pt}
+
+.background_group{
+	background-color:  #efefef;
+}
+
+.titlefont {
+	FONT-SIZE: 18px;
+	COLOR: #000000;
+	font-weight: bold;
+}
+
+.table_input_group{
+	background-color: #CCCCCC;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+.table_title_group{
+	background-color: #CCCCCC;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+
+.table_content_dark_group{
+	background-color: #CCCCCC;
+	border-top:  1px solid #666666;
+	border-right:  1px solid #666666;
+	border-bottom:  1px solid #666666;
+	border-left:  1px solid #666666;
+}
+.table_content_dark_group TD{
+	background-color: #CCCCCC;
+	border-top:  #666666;
+	border-right: #666666;
+	border-bottom:  #666666;
+	border-left: #666666;
+}
+.table_content_group{
+	background-color: #efefef;
+	border-top:  1px solid #666666;
+	border-right:  1px solid #666666;
+	border-bottom:  1px solid #666666;
+	border-left:  1px solid #666666;
+}
+.table_content_group TD{
+	background-color: #efefef;
+	border-top: #666666;
+	border-right: #666666;
+	border-bottom:  #666666;
+	border-left: #666666;
+}
+
+.table_content_grid_group{
+	background-color: #efefef;
+	border-top:  1px solid #666666;
+	border-right:  1px solid #666666;
+	border-bottom:  1px solid #666666;
+	border-left:  1px solid #666666;
+}
+.table_content_grid_group TD{
+	background-color: #efefef;
+	border-top: 1px solid #666666;
+	border-right: 1px solid #666666;
+	border-bottom:  #666666;
+	border-left: #666666;
+}
+
+.bottom_group {
+	border-top:  1px solid #666666;
+	border-right:  1px solid #666666;
+	border-bottom:  1px solid #666666;
+	border-left:  1px solid #666666;
+	BACKGROUND-COLOR: buttonface
+}
+
+.main_background_group{
+	background-color: #CCCCCC;
+	border: 1px solid #3366CC;
+}
+.fbutton {
+	BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-BOTTOM: buttonface 1px solid; BACKGROUND-COLOR: buttonface
+}
+.dbutton {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: buttonface
+}
+.pbutton {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonhighlight 1px solid; BACKGROUND-COLOR: buttonface
+}
+.ebutton {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: buttonface
+}
+.rbutton {
+	BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: buttonface 1px solid; BACKGROUND-COLOR: buttonhighlight
+}
+
+.lbutton {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: #FFFFFF
+}
+.readonly {
+	BACKGROUND-COLOR: #D6D3CE }
+
+.tbutton {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: #cccccc
+}
+
+.copyright {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: MS Sans Serif
+}
+
+.box1{border-right:#000000 1px solid;border-top:#000000 1px solid;border-left:#000000 1px solid;border-bottom:#000000 1px solid; }
+.bbutton {
+	BORDER-RIGHT: buttonshadow 1px solid;  BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: #B5BADE
+}
+.abutton {
+	BORDER-RIGHT: buttonshadow 1px solid;
+	BORDER-BOTTOM: buttonshadow 1px solid;
+	BACKGROUND-COLOR: #A1A7D1;
+	font-weight: bold;
+}
+
+
+.table_x { border-bottom:1px solid #333333 }
+.form1x { font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border:1px solid #9898c8 }
+.botton1x { font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border:1px solid #9898c8 }
+.botton2x { font-size: 9pt; background-color: #ff9966; color: #ffffff;  border:1px solid #ffffff }
+.line {
+	font-size: 9pt;
+	color: rgb(0,0,0);
+	border-bottom:1px #9898c8;
+	border-top:0px;
+	border-right:0px;
+	border-left:0px;
+	line-height: 22px;
+}
+.table2org { border-top:1px solid #ff9048; border-bottom:1px solid #ff9048 }
+.botton{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: rgb(240,234,251); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239)}
+.bottonb{ font-size: 9pt; background-color: rgb(240,234,251); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239)}
+.botton_b{ font-family: Tahoma, Arial Black; font-size: 9pt; background-color: rgb(240,234,251); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239)}
+.bottonm{ font-size: 9pt; background-color: rgb(240,234,251); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239)}
+.botton_m{ font-family: Tahoma, Arial Black font-size: 9pt; background-color: rgb(240,234,251); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239)}
+.bottonregisterred{ font-size: 9pt; background-color: rgb(255,223,224); color: rgb(0,0,0);  border: 1px solid rgb(255,128,131)}
+.botton_register_red{ font-family: Tahoma, Arial Black; font-size: 9pt; background-color: rgb(255,223,224); color: rgb(0,0,0);  border: 1px solid rgb(255,128,131)}
+.bottonregisteryel{ font-size: 9pt; background-color: #ffffcc; color: rgb(0,0,0);  border: 1px solid #ffcc66}
+.botton_register_yel{ font-family: Tahoma, Arial Black; font-size: 9pt; background-color: #ffffcc; color: rgb(0,0,0);  border: 1px solid #ffcc66}
+.bottongreen{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #d0f0c8; color: rgb(0,0,0);  border: 1px solid #90d880}
+.botton_green{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #d0f0c8; color: rgb(0,0,0);  border: 1px solid #90d880}
+.bottonred{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #f0c0c0; color: rgb(0,0,0);  border: 1px solid #e87070}
+.botton_red{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #f0c0c0; color: rgb(0,0,0);  border: 1px solid #e87070}
+.bottonblu{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #efefef; color: rgb(0,0,0);  border: 1px solid #6890e8}
+.botton_blu{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #d0d8f8; color: rgb(0,0,0);  border: 1px solid #6890e8}
+.bottonblub{ font-size: 9pt; background-color: #d0d8f8; color: rgb(0,0,0);  border: 1px solid #6890e8}
+.bottonblu2{ font-size: 9pt; background-color: rgb(210,233,255); color: rgb(0,0,0);  border: 1px solid #6890e8}
+.botton_blu2{ font-family: Tahoma, Arial Black; font-size: 9pt; background-color: rgb(210,233,255); color: rgb(0,0,0);  border: 1px solid #6890e8}
+.bottonblk{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #d0d0d0; color: rgb(0,0,0);  border: 1px solid #484848}
+.botton_blk{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #d0d0d0; color: rgb(0,0,0);  border: 1px solid #484848}
+.bottonyellow{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #fff0c8; color: rgb(0,0,0);  border: 1px solid #f8d060}
+.botton_yellow{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #fff0c8; color: rgb(0,0,0);  border: 1px solid #f8d060}
+.bottonorg{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #ffd0b8; color: rgb(0,0,0);  border: 1px solid #ffa870}
+.botton_org{ font-family: Tahoma, Arial Black; font-size: 8pt; background-color: #ffd0b8; color: rgb(0,0,0);  border: 1px solid #ffa870}
+.bottonregisterorg{ font-size: 9pt; background-color: #ffd0b8; color: rgb(0,0,0);  border: 1px solid #ffa870}
+.botton_register_org{ font-size: 9pt; background-color: #ffd0b8; color: rgb(0,0,0);  border: 1px solid #ffa870}
+.bottonwhite{ font-family: Tahoma, Arial Black; font-size: 9pt; background-color: #ffffff; color: rgb(0,0,0);  border: 1px solid #ffffff}
+.botton_white{ font-size: 9pt; background-color: #ffffff; color: rgb(0,0,0);  border: 1px solid #ffffff}
+.form{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid rgb(201,177,239) }
+.formgreen{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #90d880 }
+.form_green{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #90d880 }
+.formred{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #e87070 }
+.form_red{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #e87070 }
+.formblu{
+	font-size: 9pt;
+	background-color: rgb(255,255,255);
+	color: rgb(0,0,0);
+	border: 1px solid #6890e8;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+.form_blu{
+	font-size: 9pt;
+	background-color: rgb(255,255,255);
+	border: 1px #6890e8 solid;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+.formblk{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #484848 }
+.form_blk{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #484848 }
+.formyellow{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #f8d060 }
+.form_yellow{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #f8d060 }
+.formorg{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #ffa870 }
+.form_org{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #ffa870 }
+.formregisterred{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid rgb(255,128,131) }
+.form_register_red{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid rgb(255,128,131) }
+.formregisteryel{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #ffcc99 }
+.form_register_yel{ font-size: 9pt; background-color: rgb(255,255,255); color: rgb(0,0,0);  border: 1px solid #ffcc99 }
+.Mleft {FONT-FAMILY:Marlett; FONT-SIZE: 9pt; POSITION:RELATIVE; TOP:-2px; COLOR:#FFCC00; WIDTH: 15px; VERTICAL-ALIGN: bottom;}
+.Mleftblu {FONT-FAMILY:Marlett; FONT-SIZE: 9pt; POSITION:RELATIVE; TOP:-2px; COLOR:#CCCCFF; WIDTH: 15px; VERTICAL-ALIGN: bottom;}
+.Mleft_blu {FONT-FAMILY:Marlett; FONT-SIZE: 9pt; POSITION:RELATIVE; TOP:-2px; COLOR:#CCCCFF; WIDTH: 15px; VERTICAL-ALIGN: bottom;}
+.Mleftred {FONT-FAMILY:Marlett; FONT-SIZE: 9pt; POSITION:RELATIVE; TOP:-2px; COLOR:#FF6666; WIDTH: 15px; VERTICAL-ALIGN: bottom;}
+a{ text-decoration: none; color: #CC0042}
+a:hover{ color: #ff6600; text-decoration: none }
+a:vlink{ color: #ff6600; text-decoration: none }
+.hwhite{ color: #990000;text-decoration: none }
+.hwhite:link{ color: #CC0033;text-decoration: none }
+.hwhite:visited{ color: #336600;text-decoration: none }
+.hwhite:hover{ color: #cccccc;text-decoration: none }
+.NEWS { font-family: "Arial", "Helvetica", "sans-serif"; font-size: 8pt; font-style: italic; font-weight: bold; color: #FF0000}
+.shadow {
+	filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=absolute);
+	color:#ffffff;
+	line-height: 25px;
+
+
+}
+.font {  font-size: 9px}
+.big {  font-size: 10.5pt}
+.list_red {  font-size: 9pt; color: #000000; background-color: #FFFFFF; border: 1px #FF9999 solid}
+.small {  font-size: 9pt}
+td {
+	font-size: 9pt;
+}
+
+</STYLE>

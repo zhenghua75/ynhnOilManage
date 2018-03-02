@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{769B22DA-00D6-4E5A-950E-1C9ED4695594}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>DataAccess</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KxdInfo.KM.DataAccess</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{3F3E4677-ADBE-49C2-8D1F-68BA6C2A72B0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityObject\EntityObject.csproj">
+      <Name>EntityObject</Name>
+      <Project>{18F2B6CB-6E75-4D94-8395-762FA3F223F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessBase\ConnectionPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\EntityMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\ObjectPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryConditionDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryConditionField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryConditionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryOperationSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\QueryOrderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\SingleTableQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessBase\SqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\BusiLogAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\BusiSerialNoAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\DeptAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\FillFeeAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\FuncAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\MebCompanyPrepayAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\MemberAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\OilPriceAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\OperAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\OperFuncAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\OperIDAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccessClass\SpecialOilDeptAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\BusiLogArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\BusiSerialNoArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\DeptArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\FillFeeArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\FuncArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\MebCompanyPrepayArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\OilPriceArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\OperArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\OperFuncArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\OperIDArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueryArgs\SpecialOilDeptArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

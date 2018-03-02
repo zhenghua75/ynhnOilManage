@@ -1,0 +1,32 @@
+td {FONT-FAMILY: ËÎÌו;font-size: 9pt}
+
+a:link {color: #215DC6; text-decoration: none}
+a:active {color: #215DC6; text-decoration: none}
+a:visited {color: #215DC6; text-decoration: none}
+a:hover {color: #428EFF; text-decoration:underline}
+input {
+	font-size: 9pt;
+	font-weight: normal;
+	font-family:Arial;
+}
+
+select {
+	font-size: 9pt;
+	font-weight: normal;
+	font-family:Arial;
+}
+
+textarea {
+	font-size: 9pt;
+	font-weight: normal;
+	font-family:Arial;
+}
+
+body {
+	background-image: url(../images/bg.jpg);
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18F2B6CB-6E75-4D94-8395-762FA3F223F4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>EntityObject</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KxdInfo.KM.EntityObject</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase\ColumnAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase\ColumnMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase\EntityObjectBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase\TableAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase\TableMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfMaterials.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfMaterialsHis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfOutStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfOutStorageHis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfValidate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BillOfValidateHis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BusiLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\BusiSerialNo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\ConsItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\ConsItemHis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\Dept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\FillFee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\Func.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\LoginLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\MebCompanyPrepay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OilPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OilStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OilStorageLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OilStorageLogHis.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\Oper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OperFunc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\OperID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityClass\SpecialOilDept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

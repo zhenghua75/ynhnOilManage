@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CB9A1B3-0290-4ECA-9E22-9E67B9A4D7D8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Interface</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ynhnOilManage.Interface</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ynhnOilManage\BusinessFacade\BusinessFacade.csproj">
+      <Name>BusinessFacade</Name>
+      <Project>{EBDA40A7-36EF-491E-B256-2C6207C59BCC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ynhnOilManage\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{3F3E4677-ADBE-49C2-8D1F-68BA6C2A72B0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\ynhnOilManage\EntityObject\EntityObject.csproj">
+      <Name>EntityObject</Name>
+      <Project>{18F2B6CB-6E75-4D94-8395-762FA3F223F4}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="Microsoft.Web.UI.WebControls">
+      <Name>Microsoft.Web.UI.WebControls</Name>
+      <HintPath>C:\Program Files\Microsoft Internet Explorer WebControls\Microsoft.Web.UI.WebControls.dll</HintPath>
+      <AssemblyFolderKey>hklm\dn\iewebcontrols</AssemblyFolderKey>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonStatic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Prepay\wfmAddCompany.aspx.cs">
+      <DependentUpon>wfmAddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prepay\wfmCompanyPrepay.aspx.cs">
+      <DependentUpon>wfmCompanyPrepay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prepay\wfmFillFee.aspx.cs">
+      <DependentUpon>wfmFillFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\DataGridToExcel.aspx.cs">
+      <DependentUpon>DataGridToExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ucPageView.ascx.cs">
+      <DependentUpon>ucPageView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmBusiLogReport.aspx.cs">
+      <DependentUpon>wfmBusiLogReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmMemberCons.aspx.cs">
+      <DependentUpon>wfmMemberCons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmMemberList.aspx.cs">
+      <DependentUpon>wfmMemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmOilDayReport.aspx.cs">
+      <DependentUpon>wfmOilDayReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmOilMonthReport.aspx.cs">
+      <DependentUpon>wfmOilMonthReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmOilStorageLogReport.aspx.cs">
+      <DependentUpon>wfmOilStorageLogReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmOilValidateListMod.aspx.cs">
+      <DependentUpon>wfmOilValidateListMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmOilValidateListReport.aspx.cs">
+      <DependentUpon>wfmOilValidateListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmRetailOilListReport.aspx.cs">
+      <DependentUpon>wfmRetailOilListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmRetailOilSumReport.aspx.cs">
+      <DependentUpon>wfmRetailOilSumReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmSotrageMoveListMod.aspx.cs">
+      <DependentUpon>wfmSotrageMoveListMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmSotrageMoveListReport.aspx.cs">
+      <DependentUpon>wfmSotrageMoveListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmSpecialOilListMod.aspx.cs">
+      <DependentUpon>wfmSpecialOilListMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmSpecialOilListReport.aspx.cs">
+      <DependentUpon>wfmSpecialOilListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmSpecialOilSumReport.aspx.cs">
+      <DependentUpon>wfmSpecialOilSumReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\wfmStorageOilListReport.aspx.cs">
+      <DependentUpon>wfmStorageOilListReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\AlertControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysManage\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\DefaultControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysManage\DeptDialog.aspx.cs">
+      <DependentUpon>DeptDialog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\DeptOper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SysManage\DeptProperties.aspx.cs">
+      <DependentUpon>DeptProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\exit.aspx.cs">
+      <DependentUpon>exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Left.aspx.cs">
+      <DependentUpon>Left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Left2.aspx.cs">
+      <DependentUpon>Left2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Load.aspx.cs">
+      <DependentUpon>Load.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Right.aspx.cs">
+      <DependentUpon>Right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\Top.aspx.cs">
+      <DependentUpon>Top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\UserProperties.aspx.cs">
+      <DependentUpon>UserProperties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmAuthorization.aspx.cs">
+      <DependentUpon>wfmAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmDeptUserManage.aspx.cs">
+      <DependentUpon>wfmDeptUserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmListMod.aspx.cs">
+      <DependentUpon>wfmListMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmNewUser.aspx.cs">
+      <DependentUpon>wfmNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmNoAuthorization.aspx.cs">
+      <DependentUpon>wfmNoAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmOilPrice.aspx.cs">
+      <DependentUpon>wfmOilPrice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmOperList.aspx.cs">
+      <DependentUpon>wfmOperList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmRegister.aspx.cs">
+      <DependentUpon>wfmRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmSpecialOilDept.aspx.cs">
+      <DependentUpon>wfmSpecialOilDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmSpecialOilDeptAdd.aspx.cs">
+      <DependentUpon>wfmSpecialOilDeptAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmBase.aspx.cs">
+      <DependentUpon>wfmBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmCommonBase.aspx.cs">
+      <DependentUpon>wfmCommonBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmError.aspx.cs">
+      <DependentUpon>wfmError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmNopage.aspx.cs">
+      <DependentUpon>wfmNopage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ynhnOilManageWebSetup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="aspnet_client\system_web\1_1_4322\SmartNav.htm" />
+    <Content Include="aspnet_client\system_web\1_1_4322\SmartNav.js" />
+    <Content Include="aspnet_client\system_web\1_1_4322\WebUIValidation.js" />
+    <Content Include="Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Images\Add.gif" />
+    <Content Include="Images\backbk.jpg" />
+    <Content Include="Images\Backup.gif" />
+    <Content Include="Images\banner.gif" />
+    <Content Include="Images\banner.swf" />
+    <Content Include="Images\banner01.swf" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bgLeftBottom.jpg" />
+    <Content Include="Images\bgLeftTop.jpg" />
+    <Content Include="Images\bgRightBottom.jpg" />
+    <Content Include="Images\bgRightTop.jpg" />
+    <Content Include="Images\bg_bom.jpg" />
+    <Content Include="Images\bg_lft.jpg" />
+    <Content Include="Images\bg_rgt.JPG" />
+    <Content Include="Images\bg_top.jpg" />
+    <Content Include="Images\box_checked_over.ico" />
+    <Content Include="Images\btnAdd.gif" />
+    <Content Include="Images\btnBuckup.gif" />
+    <Content Include="Images\btnCancel.gif" />
+    <Content Include="Images\btnClean.gif" />
+    <Content Include="Images\btnDel.gif" />
+    <Content Include="Images\btnExit.gif" />
+    <Content Include="Images\btnLogin.gif" />
+    <Content Include="Images\btnOk.gif" />
+    <Content Include="Images\btnQuery.gif" />
+    <Content Include="Images\btnRestore.gif" />
+    <Content Include="Images\btnSave.gif" />
+    <Content Include="Images\btnSet.gif" />
+    <Content Include="Images\btnSetting.gif" />
+    <Content Include="Images\btn_exit.gif" />
+    <Content Include="Images\btn_hy.gif" />
+    <Content Include="Images\btn_hz.gif" />
+    <Content Include="Images\btn_mx.gif" />
+    <Content Include="Images\btn_sys_manage.gif" />
+    <Content Include="Images\car.ico" />
+    <Content Include="Images\Change.gif" />
+    <Content Include="Images\Class.gif" />
+    <Content Include="Images\Close.jpg" />
+    <Content Include="Images\database edit.ico" />
+    <Content Include="Images\date and time-2.ico" />
+    <Content Include="Images\delete.ico" />
+    <Content Include="Images\doc excel.ico" />
+    <Content Include="Images\Down.gif" />
+    <Content Include="Images\Error.gif" />
+    <Content Include="Images\Event.gif" />
+    <Content Include="Images\Excel.gif" />
+    <Content Include="Images\exclam.gif" />
+    <Content Include="Images\faq.gif" />
+    <Content Include="Images\feedback.gif" />
+    <Content Include="Images\File.gif" />
+    <Content Include="Images\find.ico" />
+    <Content Include="Images\Flash.gif" />
+    <Content Include="Images\Gt.gif" />
+    <Content Include="Images\gt.jpg" />
+    <Content Include="Images\Hein032.jpg" />
+    <Content Include="Images\help.ico" />
+    <Content Include="Images\Image.gif" />
+    <Content Include="Images\Info.gif" />
+    <Content Include="Images\InfoClass.jpg" />
+    <Content Include="Images\InfoClassOpen.jpg" />
+    <Content Include="Images\key.ico" />
+    <Content Include="Images\Load.swf" />
+    <Content Include="Images\lock off.ico" />
+    <Content Include="Images\Login.gif" />
+    <Content Include="Images\Login.swf" />
+    <Content Include="Images\LoginTitle.jpg" />
+    <Content Include="Images\Logo.jpg" />
+    <Content Include="Images\Logon.jpg" />
+    <Content Include="Images\Manager.gif" />
+    <Content Include="Images\mark.jpg" />
+    <Content Include="Images\MediaPlayer.gif" />
+    <Content Include="Images\menu.swf" />
+    <Content Include="Images\menu.xml" />
+    <Content Include="Images\MenuTitleBg.gif" />
+    <Content Include="Images\move to.ico" />
+    <Content Include="Images\ok_16.ico" />
+    <Content Include="Images\Onkown.gif" />
+    <Content Include="Images\pass.gif" />
+    <Content Include="Images\pass.jpg" />
+    <Content Include="Images\PowerPoint.gif" />
+    <Content Include="Images\qa.gif" />
+    <Content Include="Images\Query.gif" />
+    <Content Include="Images\QueryInfo.jpg" />
+    <Content Include="Images\QuickTime.gif" />
+    <Content Include="Images\RealPlayer.gif" />
+    <Content Include="Images\report.ico" />
+    <Content Include="Images\resert.gif" />
+    <Content Include="Images\ResRreview.jpg" />
+    <Content Include="Images\Restoral.gif" />
+    <Content Include="Images\Root.jpg" />
+    <Content Include="Images\set.gif" />
+    <Content Include="Images\shoppingcart_16.ico" />
+    <Content Include="Images\sum.ico" />
+    <Content Include="Images\summary.ico" />
+    <Content Include="Images\Title.gif" />
+    <Content Include="Images\TopLeft.jpg" />
+    <Content Include="Images\TopLine.jpg" />
+    <Content Include="Images\tree\img-branch-cont.png" />
+    <Content Include="Images\tree\img-branch-end.png" />
+    <Content Include="Images\tree\img-branch-start.png" />
+    <Content Include="Images\tree\img-minus-cont.png" />
+    <Content Include="Images\tree\img-minus-end.png" />
+    <Content Include="Images\tree\img-minus-start.png" />
+    <Content Include="Images\tree\img-organizationalUnit.gif" />
+    <Content Include="Images\tree\img-plus-cont.png" />
+    <Content Include="Images\tree\img-plus-end.png" />
+    <Content Include="Images\tree\img-plus-start.png" />
+    <Content Include="Images\tree\img-user.gif" />
+    <Content Include="Images\tree\img-vert-empty.png" />
+    <Content Include="Images\tree\img-vert-line.png" />
+    <Content Include="Images\Update.gif" />
+    <Content Include="Images\User.gif" />
+    <Content Include="Images\UserManage.gif" />
+    <Content Include="Images\users.ico" />
+    <Content Include="Images\warning.ico" />
+    <Content Include="Images\WinRAR.gif" />
+    <Content Include="Images\Word.gif" />
+    <Content Include="Images\yl.gif" />
+    <Content Include="Images\ylbb.gif" />
+    <Content Include="Images\zip.gif" />
+    <Content Include="Prepay\wfmAddCompany.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Prepay\wfmCompanyPrepay.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Prepay\wfmFillFee.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\DataGridToExcel.aspx" />
+    <Content Include="Report\ucPageView.ascx" />
+    <Content Include="Report\wfmBusiLogReport.aspx" />
+    <Content Include="Report\wfmMemberCons.aspx" />
+    <Content Include="Report\wfmMemberList.aspx" />
+    <Content Include="Report\wfmOilDayReport.aspx" />
+    <Content Include="Report\wfmOilMonthReport.aspx" />
+    <Content Include="Report\wfmOilStorageLogReport.aspx" />
+    <Content Include="Report\wfmOilValidateListMod.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\wfmOilValidateListReport.aspx" />
+    <Content Include="Report\wfmRetailOilListReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\wfmRetailOilSumReport.aspx" />
+    <Content Include="Report\wfmSotrageMoveListMod.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\wfmSotrageMoveListReport.aspx" />
+    <Content Include="Report\wfmSpecialOilListMod.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Report\wfmSpecialOilListReport.aspx" />
+    <Content Include="Report\wfmSpecialOilSumReport.aspx" />
+    <Content Include="Report\wfmStorageOilListReport.aspx" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="Scripts\calendar.js" />
+    <Content Include="Scripts\calendar3.0.htm" />
+    <Content Include="style.css" />
+    <Content Include="SysManage\calendar.js" />
+    <Content Include="SysManage\ChangePassword.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\css\accordion.css" />
+    <Content Include="SysManage\Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\DeptDialog.aspx" />
+    <Content Include="SysManage\DeptProperties.aspx" />
+    <Content Include="SysManage\exit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\help.files\filelist.xml" />
+    <Content Include="SysManage\help.files\image001.png" />
+    <Content Include="SysManage\help.files\image002.jpg" />
+    <Content Include="SysManage\help.files\image003.png" />
+    <Content Include="SysManage\help.files\image004.jpg" />
+    <Content Include="SysManage\help.files\image005.png" />
+    <Content Include="SysManage\help.files\image006.jpg" />
+    <Content Include="SysManage\help.files\image007.png" />
+    <Content Include="SysManage\help.files\image008.jpg" />
+    <Content Include="SysManage\help.files\image009.png" />
+    <Content Include="SysManage\help.files\image010.jpg" />
+    <Content Include="SysManage\help.files\image011.png" />
+    <Content Include="SysManage\help.files\image012.jpg" />
+    <Content Include="SysManage\help.files\image013.png" />
+    <Content Include="SysManage\help.files\image014.jpg" />
+    <Content Include="SysManage\help.files\image015.png" />
+    <Content Include="SysManage\help.files\image016.jpg" />
+    <Content Include="SysManage\help.files\image017.png" />
+    <Content Include="SysManage\help.files\image018.jpg" />
+    <Content Include="SysManage\help.files\image019.png" />
+    <Content Include="SysManage\help.files\image020.jpg" />
+    <Content Include="SysManage\help.files\image021.png" />
+    <Content Include="SysManage\help.files\image022.jpg" />
+    <Content Include="SysManage\help.files\image023.png" />
+    <Content Include="SysManage\help.files\image024.jpg" />
+    <Content Include="SysManage\help.htm" />
+    <Content Include="SysManage\js\jquery-1.3.2.min.js" />
+    <Content Include="SysManage\js\jquery.msAccordion.compressed.js" />
+    <Content Include="SysManage\js\jquery.msAccordion.js" />
+    <Content Include="SysManage\Left.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\Left2.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\Load.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\Login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\Main.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\PopupDlg.js" />
+    <Content Include="SysManage\Right.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\style_Left.css" />
+    <Content Include="SysManage\tabIndex.js" />
+    <Content Include="SysManage\Top.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\UserProperties.aspx" />
+    <Content Include="SysManage\validator.js" />
+    <Content Include="SysManage\wfmAuthorization.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmDeptUserManage.aspx" />
+    <Content Include="SysManage\wfmListMod.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmNewUser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmNoAuthorization.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmOilPrice.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmOperList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmRegister.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmSpecialOilDept.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmSpecialOilDeptAdd.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\window.css" />
+    <Content Include="Web.config" />
+    <Content Include="wfmBase.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="wfmCommonBase.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="wfmError.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="wfmNopage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prepay\wfmAddCompany.aspx.resx">
+      <DependentUpon>wfmAddCompany.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prepay\wfmCompanyPrepay.aspx.resx">
+      <DependentUpon>wfmCompanyPrepay.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prepay\wfmFillFee.aspx.resx">
+      <DependentUpon>wfmFillFee.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DataGridToExcel.aspx.resx">
+      <DependentUpon>DataGridToExcel.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ucPageView.ascx.resx">
+      <DependentUpon>ucPageView.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmBusiLogReport.aspx.resx">
+      <DependentUpon>wfmBusiLogReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmMemberCons.aspx.resx">
+      <DependentUpon>wfmMemberCons.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmMemberList.aspx.resx">
+      <DependentUpon>wfmMemberList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmOilDayReport.aspx.resx">
+      <DependentUpon>wfmOilDayReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmOilMonthReport.aspx.resx">
+      <DependentUpon>wfmOilMonthReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmOilStorageLogReport.aspx.resx">
+      <DependentUpon>wfmOilStorageLogReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmOilValidateListMod.aspx.resx">
+      <DependentUpon>wfmOilValidateListMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmOilValidateListReport.aspx.resx">
+      <DependentUpon>wfmOilValidateListReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmRetailOilListReport.aspx.resx">
+      <DependentUpon>wfmRetailOilListReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmRetailOilSumReport.aspx.resx">
+      <DependentUpon>wfmRetailOilSumReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmSotrageMoveListMod.aspx.resx">
+      <DependentUpon>wfmSotrageMoveListMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmSotrageMoveListReport.aspx.resx">
+      <DependentUpon>wfmSotrageMoveListReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmSpecialOilListMod.aspx.resx">
+      <DependentUpon>wfmSpecialOilListMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmSpecialOilListReport.aspx.resx">
+      <DependentUpon>wfmSpecialOilListReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmSpecialOilSumReport.aspx.resx">
+      <DependentUpon>wfmSpecialOilSumReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\wfmStorageOilListReport.aspx.resx">
+      <DependentUpon>wfmStorageOilListReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\ChangePassword.aspx.resx">
+      <DependentUpon>ChangePassword.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\DeptDialog.aspx.resx">
+      <DependentUpon>DeptDialog.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\DeptProperties.aspx.resx">
+      <DependentUpon>DeptProperties.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\exit.aspx.resx">
+      <DependentUpon>exit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Left.aspx.resx">
+      <DependentUpon>Left.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Left2.aspx.resx">
+      <DependentUpon>Left2.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Load.aspx.resx">
+      <DependentUpon>Load.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Main.aspx.resx">
+      <DependentUpon>Main.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Right.aspx.resx">
+      <DependentUpon>Right.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\Top.aspx.resx">
+      <DependentUpon>Top.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\UserProperties.aspx.resx">
+      <DependentUpon>UserProperties.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmAuthorization.aspx.resx">
+      <DependentUpon>wfmAuthorization.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmDeptUserManage.aspx.resx">
+      <DependentUpon>wfmDeptUserManage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmListMod.aspx.resx">
+      <DependentUpon>wfmListMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmNewUser.aspx.resx">
+      <DependentUpon>wfmNewUser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmNoAuthorization.aspx.resx">
+      <DependentUpon>wfmNoAuthorization.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmOilPrice.aspx.resx">
+      <DependentUpon>wfmOilPrice.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmOperList.aspx.resx">
+      <DependentUpon>wfmOperList.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmRegister.aspx.resx">
+      <DependentUpon>wfmRegister.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmSpecialOilDept.aspx.resx">
+      <DependentUpon>wfmSpecialOilDept.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmSpecialOilDeptAdd.aspx.resx">
+      <DependentUpon>wfmSpecialOilDeptAdd.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmBase.aspx.resx">
+      <DependentUpon>wfmBase.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmCommonBase.aspx.resx">
+      <DependentUpon>wfmCommonBase.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmError.aspx.resx">
+      <DependentUpon>wfmError.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmNopage.aspx.resx">
+      <DependentUpon>wfmNopage.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Images\tree\Thumbs.db" />
+    <None Include="Resources\DataAccessBuildClass.cst" />
+    <None Include="Resources\EntityBuildClass.cst" />
+    <None Include="Resources\QueryArgsBuildClass.cst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppLog\database_ex\" />
+    <Folder Include="AppLog\features_ex\" />
+    <Folder Include="AppLog\interface_ex\" />
+    <Folder Include="MediaResource\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57214/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
